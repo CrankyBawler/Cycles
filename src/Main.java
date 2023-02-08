@@ -15,6 +15,7 @@ public class Main {
         task13();
         task14();
         task15();
+        task16();
     }
 
     public static void task1() {
@@ -153,6 +154,19 @@ public class Main {
         int total = 15_000;
         double percent = 1.07;
         for (int i = 1; total <= 12_000_000; i++) {
+            total = (int) (total * percent);
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+            }
+        }
+    }
+
+    public static void task16() {
+        System.out.println("Циклы. Часть 2. Задача 6");
+        int total = 15_000;
+        double percent = 1.07;
+        int nineYearsInMonths = 9 * 12;
+        for (int i = 1; i <= nineYearsInMonths; i++) {
             total = (int) (total * percent);
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
