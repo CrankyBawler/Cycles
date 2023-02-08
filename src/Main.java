@@ -13,6 +13,7 @@ public class Main {
         task11();
         task12();
         task13();
+        task14();
     }
 
     public static void task1() {
@@ -121,6 +122,7 @@ public class Main {
         }
         System.out.println();
     }
+
     public static void task13() {
         System.out.println("Циклы. Часть 2. Задача 3");
         int population = 12_000_000;
@@ -129,9 +131,19 @@ public class Main {
         int dynamicsPerThousand = birthRatePerThousand - mortalityPerThousand;
         int year = 0;
         while (year <= 10) {
-        population = population + (population / 1000 * dynamicsPerThousand);
+            population = population + (population / 1000 * dynamicsPerThousand);
             System.out.println("Год " + year + " ,численность населения составляет " + population);
             year++;
+        }
+    }
+
+    public static void task14() {
+        System.out.println("Циклы. Часть 2. Задача 4");
+        int total = 15_000;
+        double percent = 1.07;
+        for (int i = 1; total <= 12_000_000; i++) {
+            total = (int) (total * percent);
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
     }
 }
