@@ -17,6 +17,7 @@ public class Main {
         task15();
         task16();
         task17();
+        task18();
     }
 
     public static void task1() {
@@ -174,11 +175,25 @@ public class Main {
             }
         }
     }
+
     public static void task17() {
         System.out.println("Циклы. Часть 2. Задача 7");
         int firstFridayOfTheMonth = 4;
-        for (int i = firstFridayOfTheMonth; i <= 31; i = i +7){
+        for (int i = firstFridayOfTheMonth; i <= 31; i = i + 7) {
             System.out.println("Сегодня пятница, " + i + " -е число. Необходимо подготовить отчет");
         }
+    }
+
+    public static void task18() {
+        System.out.println("Циклы. Часть 2. Задача 8");
+        int startYears = 0;
+        int cometIsComing = 79;
+        int nowYear = 2023;
+        while (startYears <= nowYear + 100 - cometIsComing) {
+            startYears = startYears + cometIsComing;
+            if (nowYear - 200 < startYears && startYears <= nowYear + 100) {
+                System.out.println(startYears);
+            }
         }
+    }
 }
