@@ -16,6 +16,7 @@ public class Main {
         task14();
         task15();
         task16();
+        task17();
     }
 
     public static void task1() {
@@ -173,4 +174,11 @@ public class Main {
             }
         }
     }
+    public static void task17() {
+        System.out.println("Циклы. Часть 2. Задача 7");
+        int firstFridayOfTheMonth = 4;
+        for (int i = firstFridayOfTheMonth; i <= 31; i = i +7){
+            System.out.println("Сегодня пятница, " + i + " -е число. Необходимо подготовить отчет");
+        }
+        }
 }
