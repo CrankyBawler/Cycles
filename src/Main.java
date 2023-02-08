@@ -10,6 +10,8 @@ public class Main {
         task8();
         task9();
         task10();
+        task11();
+        task12();
     }
 
     public static void task1() {
@@ -61,31 +63,49 @@ public class Main {
             System.out.println(i);
         }
     }
+
     public static void task8() {
         System.out.println("Задача 8");
-    int salary = 29000;
-    int total = 0;
-    for (int i = 0; i < 12; i++){
-        total = total + salary;
-        System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
-    }
-    }
-    public static void task9() {
-        System.out.println("Задача 9");
         int salary = 29000;
         int total = 0;
-        for (int i = 0; i < 12; i++){
-            total = total + total/100;
+        for (int i = 0; i < 12; i++) {
             total = total + salary;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
     }
+
+    public static void task9() {
+        System.out.println("Задача 9");
+        int salary = 29000;
+        int total = 0;
+        for (int i = 0; i < 12; i++) {
+            total = total + total / 100;
+            total = total + salary;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
+    }
+
     public static void task10() {
         System.out.println("Задача 10");
         int two = 2;
-        for (int i = 1; i <= 10; i++){
+        for (int i = 1; i <= 10; i++) {
             int multiplication = i * two;
-            System.out.println(i + " * " + two + " = " +multiplication );
+            System.out.println(i + " * " + two + " = " + multiplication);
         }
-}
+    }
+
+    public static void task11() {
+        System.out.println("Циклы. Часть 2. Задача 1");
+        int salary = 15_000;
+        int total = 0;
+        int i = 0;
+        while (total <= 2_459_000) {
+            total = total + salary;
+            i++;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
+    }
+    public static void task12() {
+        System.out.println("Циклы. Часть 2. Задача 2");
+
 }
