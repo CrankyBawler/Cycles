@@ -12,6 +12,7 @@ public class Main {
         task10();
         task11();
         task12();
+        task13();
     }
 
     public static void task1() {
@@ -117,6 +118,20 @@ public class Main {
         int a = 10;
         for (; a >= 1; a--) {
             System.out.print(" " + a);
+        }
+        System.out.println();
+    }
+    public static void task13() {
+        System.out.println("Циклы. Часть 2. Задача 3");
+        int population = 12_000_000;
+        int birthRatePerThousand = 17;
+        int mortalityPerThousand = 8;
+        int dynamicsPerThousand = birthRatePerThousand - mortalityPerThousand;
+        int year = 0;
+        while (year <= 10) {
+        population = population + (population / 1000 * dynamicsPerThousand);
+            System.out.println("Год " + year + " ,численность населения составляет " + population);
+            year++;
         }
     }
 }
