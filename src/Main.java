@@ -101,11 +101,22 @@ public class Main {
         int i = 0;
         while (total <= 2_459_000) {
             total = total + salary;
-            i++;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+            i++;
         }
     }
+
     public static void task12() {
         System.out.println("Циклы. Часть 2. Задача 2");
-
+        int i = 1;
+        while (i <= 10) {
+            System.out.print(" " + i);
+            i++;
+        }
+        System.out.println();
+        int a = 10;
+        for (; a >= 1; a--) {
+            System.out.print(" " + a);
+        }
+    }
 }
