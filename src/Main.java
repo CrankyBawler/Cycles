@@ -14,6 +14,7 @@ public class Main {
         task12();
         task13();
         task14();
+        task15();
     }
 
     public static void task1() {
@@ -144,6 +145,18 @@ public class Main {
         for (int i = 1; total <= 12_000_000; i++) {
             total = (int) (total * percent);
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
+    }
+
+    public static void task15() {
+        System.out.println("Циклы. Часть 2. Задача 5");
+        int total = 15_000;
+        double percent = 1.07;
+        for (int i = 1; total <= 12_000_000; i++) {
+            total = (int) (total * percent);
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+            }
         }
     }
 }
